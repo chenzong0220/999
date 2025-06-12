@@ -99,6 +99,7 @@ end_date = datetime.datetime.strptime(end_date,'%Y-%m-%d')
 df = df_original[(df_original['time'] >= start_date) & (df_original['time'] <= end_date)]
 
 
+
 #%%
 ####### (2) 轉化為字典 #######
 @st.cache_data(ttl=3600, show_spinner="正在加載資料...")  ## Add the caching decorator
